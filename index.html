@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Sorting Visualizer</title>
+        <link rel="stylesheet" href="sortingVisualizer.css" type="text/css">
+        <link rel="icon" href="https://banner2.kisspng.com/20180525/kr/kisspng-computer-icons-sorting-algorithm-download-5b08c079b2d025.2739480315273002177324.jpg">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        </head>
+    <body>
+        <h1>Sorting Algorithm Visualizer</h1>
+        <div class="header" id='header'>
+            <button id="generate" class="active">Generate Array</button>
+            <span id="array" class="active">Array Size</span><input type="range" min="2" max="400" value="20" class="slider" id="arraySize">
+            <span id="array">Sort Delay</span><input type="range" min="0" max="13" value="1" class="slider" id="delaySlider">
+            <div class="box">
+                <select id="select">
+                    <option>Bubble Sort</option>
+                    <option>Insertion Sort</option>
+                    <option>Selection Sort</option>
+                    <option>Quicksort Sort</option>
+                    <option>Merge Sort</option>
+                    <option>Bogo Sort</option>
+                    <option>Gnome Sort</option>
+                    <option>Cocktail Sort</option>
+                </select>
+            </div>
+            <button id="sort" class="active">Sort!</button>
+            <div class="stats" id="stats">
+                <div id="elementsBox">Num Array Elements:
+                    <span id="elements">20</span>
+                <div id="comparisonBox">Num Comparisons:
+                    <span id="comparisons">0</span>
+                </div>
+                <div id="arrAccessesBox">Num Array Accesses:
+                    <span id="accesses">0</span>
+                </div>
+                <p id="stopwatch"><span id="min">0</span> : <span id="sec">00</span> : <span id="msec">000</span></p>
+            </div>
+        </div>
+        <div id="container">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+    </body>
+    <script type="text/javascript" src="sortingAlgorithms.js" ></script> 
+    <script type="text/javascript" src="sortingVisualizer.js"></script>
+    <script type="text/javascript" src="stopwatch.js"></script>
+</html>

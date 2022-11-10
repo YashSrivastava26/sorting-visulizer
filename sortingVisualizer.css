@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background: linear-gradient(-80deg, #e0d0cb, #d9c1ca, #b1c9c4);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    background: #101010;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    padding: 10px;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    display: inline-block;
+    background-color: #101010;
+    text-align: center;
+}
+
+button {
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    background: none;
+    color: white;
+    height: 100%;
+}
+
+button:hover {
+    color: #101010;
+    background: white;
+}
+
+#generate {
+    display: inline;
+    width: 15%;
+}
+
+#array {
+    display: inline-block;
+    width: 6%;
+    background-color: inherit;
+    color: white;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 20%; 
+    background: #d3d3d3; /* Grey background */
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .3s;
+    transition: opacity .3s;
+    vertical-align: middle;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: steelblue;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: steelblue;
+    cursor: pointer;
+}
+
+.box {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.box select {
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(255,255,255,.3);
+}
+
+#sort {
+    display: inline-block;
+    width: 8%;
+}
+
+
+#container {
+    margin: 20px 20px;
+    text-align: center;
+}
+
+.bar {
+    width: 20px;
+    background: steelblue;
+    height: 50px;
+    float: left;
+    margin: 0px 1px;
+}
+
+.stats {
+    max-width: 100%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+#arrAccessesBox {
+    display: inline-block;
+    width: 27.5%;
+}
+
+#comparisonBox {
+    display: inline-block;
+    width: 27.5%;
+}
+
+#arrAccessesBox {
+    display: inline-block;
+    width: 27.5%;
+}
+
+#stopwatch {
+    display: inline-block;
+    width: 17.5%;
+}
+
+.active {
+    color: white;
+    cursor: pointer;
+}
+
+.notActive {
+    color: red;
+    cursor: not-allowed;
+}
